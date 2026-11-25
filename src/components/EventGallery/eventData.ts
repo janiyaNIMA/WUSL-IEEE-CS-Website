@@ -1,10 +1,4 @@
-// Authentic event assets
-import ieeextreme from "../../assets/events/ieeextreme19-1.jpeg";
-import techx from "../../assets/events/techx.jpg";
-import innova from "../../assets/events/innova.png";
-import spectrum from "../../assets/events/spectrum.jpg";
-import byteAndBuild from "../../assets/events/byte-and-build-2.jpeg";
-import ignitron from "../../assets/events/ignitron-1.jpeg";
+import urlMap from '../../cloudinary-url-map.json';
 
 export interface EventItem {
   id: string;
@@ -22,7 +16,7 @@ export const EVENT_DATA: EventItem[] = [
     title: "IEEEXtreme 19.0 Coding Competition",
     category: "Coding Competition",
     date: "October 25, 2025",
-    image: ieeextreme,
+    image: urlMap["events/ieeextreme19-1.jpeg"],
     link: "/events",
     alt: "Participants solving algorithmic challenges during IEEEXtreme 19.0 Coding Competition",
   },
@@ -31,7 +25,7 @@ export const EVENT_DATA: EventItem[] = [
     title: "TechX Sri Lanka 2025",
     category: "Annual Conference",
     date: "July 26, 2025",
-    image: techx,
+    image: urlMap["events/techx.jpg"],
     link: "/events",
     alt: "TechX Sri Lanka annual technology conference banner and keynotes",
   },
@@ -40,7 +34,7 @@ export const EVENT_DATA: EventItem[] = [
     title: "Innova Innovation Summit",
     category: "Innovation Summit",
     date: "July 17, 2025",
-    image: innova,
+    image: urlMap["events/innova.png"],
     link: "/events",
     alt: "Innova Innovation Summit showcasing student ideation and tech projects",
   },
@@ -49,7 +43,7 @@ export const EVENT_DATA: EventItem[] = [
     title: "Spectrum of Light 2025 – Vesak Photography Competition",
     category: "Photography Competition",
     date: "May 10, 2025",
-    image: spectrum,
+    image: urlMap["events/spectrum.jpg"],
     link: "/events",
     alt: "Spectrum of Light Vesak photography competition celebration and gallery",
   },
@@ -58,7 +52,7 @@ export const EVENT_DATA: EventItem[] = [
     title: "“Byte & Build” Game Development Workshop",
     category: "Technical Workshop",
     date: "April 30 – May 1, 2025",
-    image: byteAndBuild,
+    image: urlMap["events/byte-and-build-2.jpeg"],
     link: "/events",
     alt: "Hands-on prototype development during the Byte & Build workshop",
   },
@@ -67,7 +61,7 @@ export const EVENT_DATA: EventItem[] = [
     title: "IGNITRON Awareness Session",
     category: "Awareness Session",
     date: "March 22, 2025",
-    image: ignitron,
+    image: urlMap["events/ignitron-1.jpeg"],
     link: "/events",
     alt: "Students attending the IGNITRON robotics and engineering awareness session",
   },

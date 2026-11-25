@@ -10,6 +10,7 @@ build/
 out/
 *.local
 .agents
+scripts/
 
 
 # Vite / Bundler cache
